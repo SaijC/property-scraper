@@ -1,2 +1,5 @@
-# Ignore data folder
 data/
+__pycache__/
+*.pyc
+*.log
+.env
