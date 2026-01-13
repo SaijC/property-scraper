@@ -4,8 +4,9 @@ from utils.utils import save_to_csv
 def main():
     scraper = Scraper()
 
-    url = "https://stackoverflow.com/questions/46775952/how-to-move-a-line-up-or-down-in-visual-studio-code-for-mac"
+    url = "https://www.realestate.com.au/"
     html = scraper.fetch_page(url)
+    print(html)
 
     if html:
         headlines = scraper.parse_headlines(html)
